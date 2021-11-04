@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="img/wallpaper.jpg" as="image">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>William's Timer</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Timer</h1>
+        <!-- FORM -->
+        <form class="form">
+            <div class="form__minutes">
+                <label for="minutes" class="secondsTitle">Minutes:</label>
+                <div class="form__controls">
+                    <button class="btn btn-decrement minutes-decrement">
+                        -
+                    </button>
+                    <input min="0" max="59" placeholder="00" class="input" type="number" name="minutes" id="formMin">
+                    <button class="btn btn-increment minutes-increment">
+                        +
+                     </button>
+                </div>
+              
+               
+            </div>
+
+            <div class="form__seconds">
+                <label for="seconds" class="secondsTitle">Seconds:</label>
+                <div class="form__controls">
+                    <button class="btn btn-decrement seconds-decrement">
+                        -
+                    </button>
+                    <input min="0" max="59" placeholder="00" class="input" type="number" name="seconds" id="formSeg">
+                    <button class="btn btn-increment seconds-icrement">
+                        +
+                     </button>
+                </div>
+              
+               
+            </div>
+        </form>
+        <!-- //FORM -->
+        <!-- GO BUTTON-->
+        <div class="timer-buttons">
+            <button class="btn btn-primary" id="go">
+                Go
+            </button>
+            <button class="btn 2" id="stop">
+                Stop!
+            </button>
+        </div>
+        <!-- //GO BUTTON -->
+        <!-- TIMER OUTPUT -->
+        <div class="timer">
+            <span id="min">00</span>:<span id="seg">00</span>
+        </div>
+        <!-- //TIMER OUTPUT -->
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
